@@ -21,12 +21,9 @@ var curvas = L.tileLayer.wms("http://localhost:8080/geoserver/web_catastro/wms?"
     transparent: true,
     version: '1.1.1',
     attribution: "SENCICO",
-    maxZoom: 20, // Ajusta el nivel máximo de zoom
-    minZoom: 0,  // Ajusta el nivel mínimo de zoom
-    maxNativeZoom: 20, // Nivel máximo soportado por el servidor
-    minNativeZoom: 0   // Nivel mínimo soportado por el servidor
+    width: 256,
+    height: 256
 });
-curvas.addTo(map);
 
 
 var lotes = L.tileLayer.wms("http://localhost:8080/geoserver/web_catastro/wms?", {
